@@ -1,0 +1,18 @@
+.settings-main-section__logs{
+	min-height: 768px;
+		padding-top: 50px;
+		background-color: #3c373d;
+		padding-left: 50px;
+}
+.logs-line{
+
+	display: flex;
+	font-size: 14px;
+	color: #ffffff;
+}
+.logs-line__name{
+	color: #ffce4b;
+}
+.logs-line p{
+	margin-bottom: 10px;
+}

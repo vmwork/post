@@ -1,0 +1,63 @@
+body{
+	font-family: SFPro, 'sans-serif';
+	font-weight: medium;
+}
+.atorization{
+	width: 1366px;
+	min-height: 768px;
+	margin: 0 auto;
+	background-color: #3c373d;
+}
+
+.atorization__form{
+	width: 265px;
+	margin: 0 auto;
+	padding-top: 286px;
+	color: #ffffff;
+}
+.atorization__form input {
+	color: #ffffff;
+}
+.atorization__name,
+.atorization__password{
+	width: 260px;
+	height: 45px;	
+	background-color: #363137;
+	border: none;
+	border-radius: 10px;
+	outline: none;
+	padding-left: 20px;
+}
+.atorization__name::placeholder,
+.atorization__password::placeholder{
+	font-weight: bold;
+}
+.atorization__password{
+	margin-top: 10px;
+
+}
+.atorization__button{
+	
+		width: 260px;
+	height: 45px;	
+	border-radius: 10px;
+	border: 2px solid #ffce4b;
+	color: #ffce4b;
+	background: transparent;		margin-top: 38px;
+
+		font-size: 16px;
+		line-height: 42px;
+		font-weight: 400;
+		  }
+		   .atorization__button:visited,
+ .atorization__button:focus,
+ .atorization__button:active,
+ .atorization__button:hover{
+    outline:0 none !important;
+}
+	 button:visited,
+ button:focus,
+ button:active,
+ button:hover{
+    outline:0 none !important;
+}

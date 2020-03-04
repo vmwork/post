@@ -1,0 +1,14 @@
+.align-items th:not(:first-child){
+font-size: 14px;
+	text-align: center;
+	
+}
+.city-settings__header-container{
+	display: flex;
+}
+.city-settings__header-p{
+	margin-top: 8px;
+	margin-left: 40px;
+	color: #363137;
+	opacity: 0.6;
+}
