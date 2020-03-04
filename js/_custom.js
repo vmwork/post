@@ -509,3 +509,38 @@ downloadButton.addEventListener('click', function(){
 	}
 
 }
+
+// зменения диспутов в досье саппорта
+
+var cahngeDisputNamber = document.querySelectorAll('.table-header__smal-input');
+var cahngeDisputInput = document.querySelectorAll('.inputNumber')
+var disputNum = document.querySelectorAll('.disputNum')
+
+if(cahngeDisputNamber){
+	for (var i = 0; i < cahngeDisputNamber.length; i++){
+
+cahngeDisputNamber[i].addEventListener('click', cahngeDisputNamberFunc(i), false)
+}
+function cahngeDisputNamberFunc(i){
+	return function(e){
+		cahngeDisputInput[i].style.display = "inline-block";
+
+		document.addEventListener('keydown', function(evt){
+		
+	if(evt.keyCode === 13){
+		cahngeDisputInput[i].style.display = "none";
+		
+		if(cahngeDisputInput[i].value !== ''){
+		disputNum[i].textContent = cahngeDisputInput[i].value
+		
+		}
+		 cahngeDisputInput[i].value = '';
+
+		
+		
+}
+
+})
+	}
+}
+}
