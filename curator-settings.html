@@ -83,18 +83,45 @@
 <section class="substrate addcurier hidden">
 	<div class="addcurier-container">
 	<header class="addcurier-header">
-		<h2 class="addcurier-title">Добавление курьера</h2>
+		<h2 class="addcurier-title">Добавление работника</h2>
 		<button class="addcurier__add-button">Добавить</button>
 		<button class="addcurier__cancel-button">Отменить</button>
 		</header>
 		<section class="addcurier-content">
-			<div class="addcurier-content--input">
+
+			<div class="choice-work-man">
+<div class="select-work-man">
+				<div class="select-work-man-title">Курьер</div>
+	<div class="select-work-man-container hidden zindex">
+		
+		<div>Курьер</div>
+		<div>Куратор</div>
+		<div>Саппорт</div>
+	</div>
+</div>
+			</div>
+			<div class="addcurier__curier-block">
+			<div class="choice-responsible-curator">
+<div class="select-responsible-curator">
+				<div class="select-responsible-curator-title">Ответственный</div>
+	<div class="select-responsible-curator-container hidden zindex">
+		
+		<div>cur06ekb02</div>
+		<div>cur06ekb02</div>
+		<div>cur06ekb02</div>
+		<div>cur06ekb02</div>
+		<div>cur06ekb02</div>
+		<div>cur06ekb02</div>
+	</div>
+</div>
+			</div>
+			<div class="addcurier-content--input addcurier-content-margin">
 			<input type="text" placeholder="Логин курьера">
 			</div>
 
 <div class="select-addcurier">
 	<div class="select-addcurier-title">Выберите город</div>
-	<div class="select-addcurier-container hidden">
+	<div class="select-addcurier-container hidden zindex">
 		
 		<div>Краснодар</div>
 		<div>Санкт-Петербург</div>
@@ -117,12 +144,50 @@
 		Депозит ( <span>%</span>)
 		<input type="text">
 	</div>
-</div>
-			</div>
-		</section>
-	
-</section>
 
+	</div>
+
+	</div>
+
+			<div class="addcurier__curator-block" style="display: none;">
+
+	<div class="addcurier__curator--input ">
+			<input class="addcurier__curator--input-login " type="text" placeholder="Логин куратора">
+			</div>
+			<div class="addcurier__curator--input addcurier__curator--input-pass">
+			<input type="text" placeholder="Пароль куратора"><br>
+			<input type="text" placeholder="Повторите пароль">
+			</div>
+<div class="support-main__buttons-city support-main__buttons-city--margin">
+		<input type="checkbox" id="buttons-city1" checked>
+		<label for="buttons-city1">Екатеринбург</label>
+		<input type="checkbox" id="buttons-city2">
+		<label for="buttons-city2">Новосибирск</label>
+		<input type="checkbox" id="buttons-city3" checked>
+		<label for="buttons-city3">Челябинск</label>
+	</div>
+
+
+
+
+
+
+			</div>
+
+<div class="addcurier__support-block" style="display: none;">
+
+	<div class="addcurier__support--input ">
+			<input class="addcurier__support--input-login " type="text" placeholder="Логин саппорта">
+			</div>
+			<div class="addcurier__support--input addcurier__support--input-pass">
+			<input type="text" placeholder="Пароль саппорта"><br>
+			<input type="text" placeholder="Повторите пароль">
+			</div>
+			</div>
+
+
+</div>
+		</section>
 	<script src="js/scripts.min.js"></script>
 </body>
 </html>

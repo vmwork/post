@@ -104,7 +104,8 @@
 	margin-right: 50px;
 }
 .addcurier-content--input input,
-.addcurier__curator--input input{
+.addcurier__curator--input input,
+.addcurier__support--input input{
 		width: 180px;
 	height: 40px;
 	border-radius: 8px;
@@ -114,23 +115,31 @@
 	color: #ffffff;
 	background-color: #363137;
 }
-.addcurier__curator--input-login{
+.addcurier__support-block {
+	padding-bottom: 100px;
+}
+.addcurier__curator--input-login,
+.addcurier__support--input-login{
 	margin: 20px 0;
 }
-.addcurier__curator--input-pass {
+.addcurier__curator--input-pass,
+.addcurier__support--input-pass {
 	margin: 10px 0;
 		height: 130px;
 }
-.addcurier__curator--input-pass input{
+.addcurier__curator--input-pass input,
+.addcurier__support--input-pass input{
 
 	margin: 10px 0;
 }
-.addcurier__curator-block{
+.addcurier__curator-block,
+.addcurier__support-block{
 	min-height: 240px;
 	margin-right: 50px;
 		
 }
-.addcurier__curator--input{
+.addcurier__curator--input,
+.addcurier__support--input:first-child{
 border-bottom: 1px solid #514b4c;
 }
 .support-main__buttons-city.support-main__buttons-city--margin{

@@ -118,18 +118,26 @@ var openMenu = function (idMenu){
 		function set_handler(i){
   return function (e) {
     	selectContainer[0].textContent = this.textContent;
-    	var curierBlock = document.querySelector('.addcurier__curier-block');
+    var curierBlock = document.querySelector('.addcurier__curier-block');
    var curatorBlock = document.querySelector('.addcurier__curator-block');
+   var supportBlock = document.querySelector('.addcurier__support-block')
     	if (this.textContent === 'Куратор'){
     		
     	
     	curierBlock.style.display = "none";
+    	supportBlock.style.display = "none";
     	curatorBlock.style.display = "block";
 
     	} else if (this.textContent === 'Курьер') {
 
-    		curatorBlock.style.display = "none";
+    	 curatorBlock.style.display = "none";
+    	 supportBlock.style.display = "none";
     	 curierBlock.style.display = "block";
+
+    	} else if (this.textContent === 'Саппорт'){
+    		curatorBlock.style.display = "none";
+    	 supportBlock.style.display = "block";
+    	 curierBlock.style.display = "none";
     	}
   	
      };
@@ -450,8 +458,9 @@ if (settingsHeaderUserName){
 }}
 // переход с настройки курьера к досье курьера
 
-var settingsCurierSave = document.querySelector('.settings-curator-save');
+var settingsCurierSave = document.querySelector('.settings-header__save');
 var settingsCurierCansel = document.querySelector('.settings-header__cancel');
+
 if (settingsCurierSave || settingsCurierCansel){
 	settingsCurierSave.addEventListener('click', function(){
 window.location.href = 'dossier-curator.html';
