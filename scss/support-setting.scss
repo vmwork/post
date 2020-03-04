@@ -161,12 +161,12 @@ border-radius: 8px;
 .support-main__buttons-city input[type="checkbox"]:not(:checked) + label:before {
     content: "";
     position: absolute;
-    left: 0px;
+    left: -1px;
     top: -2px;
     width: 30px;
     height: 30px;
     border: 1px solid #dddddd;
-    background-color: #ffffff;
+    background-color: #363137;
     border-radius: 10px;
 }
 .support-main__buttons-city input[type="checkbox"]:checked + label:after, 
