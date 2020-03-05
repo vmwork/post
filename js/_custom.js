@@ -549,7 +549,7 @@ function cahngeDisputNamberFunc(i){
 var disputButton = document.querySelectorAll('.disput');
 var disputPopap = document.querySelector('.accrued-disputs');
 
-console.log(disputButton)
+
 if (disputButton){
 
 	for (var i = 0; i < disputButton.length; i++){
@@ -579,7 +579,7 @@ disputButtonCountMinus.addEventListener('click', function(){
 	}
 })
 }
-
+// открытие окна начисления штрафов
 var depositButton = document.querySelectorAll('.deposit');
 var depositPopup = document.querySelector('.accrued-deposit');
 if(depositButton){
@@ -601,3 +601,53 @@ depositButtonCansel.addEventListener('click', function(){
 	depositPopup.classList.add('hidden');
 })
 	}
+// открытие окна начисления выплачено
+var paidButton = document.querySelectorAll('.paid');
+var paidPopup = document.querySelector('.accrued-paid');
+
+if(paidButton){
+	for (var i = 0; i < paidButton.length; i++ ){
+paidButton[i].addEventListener('click', function(){
+	paidPopup.classList.remove('hidden');
+})
+}
+
+var paidButtonSave = document.querySelector('.accrued-paid__save');
+
+paidButtonSave.addEventListener('click', function(){
+	paidPopup.classList.add('hidden');
+})
+
+var paidButtonCansel = document.querySelector('.accrued-paid__cancel');
+
+paidButtonCansel.addEventListener('click', function(){
+	paidPopup.classList.add('hidden');
+})
+	}
+//ручное начисление
+var inputDepositButton = document.querySelectorAll('.input__deposit');
+var inputedDepozit = document.querySelectorAll('.inputed-depozit');
+var depositIntput = document.querySelectorAll('.input-deposit');
+console.log(inputDepositButton)
+
+if (inputDepositButton) {
+
+	for (var i = 0; i < inputDepositButton.length; i++)
+	{
+inputDepositButton[i].addEventListener('click', depositIntputOpen(i))
+}
+function depositIntputOpen (i){
+	return function(e){
+		depositIntput[i].classList.remove('hidden');
+	depositIntput[i].addEventListener('keydown', depositIntputClose(i))
+	}
+}
+function depositIntputClose (i){
+	return function(e){
+		if(e.keyCode === 13){
+depositIntput[i].classList.add('hidden');
+inputedDepozit[i].textContent = depositIntput[i].value
+	}}
+}
+
+}
