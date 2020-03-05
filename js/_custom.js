@@ -546,58 +546,58 @@ function cahngeDisputNamberFunc(i){
 }
 
 // открытие окна начисления диспутов
-// var disputButton = document.querySelectorAll('.disput');
-// var disputPopap = document.querySelector('.accrued-disputs');
+var disputButton = document.querySelectorAll('.disput');
+var disputPopap = document.querySelector('.accrued-disputs');
 
-// console.log(disputButton)
-// if (disputButton){
+console.log(disputButton)
+if (disputButton){
 
-// 	for (var i = 0; i < disputButton.length; i++){
+	for (var i = 0; i < disputButton.length; i++){
 
-// 	disputButton[i].addEventListener('click', function(){
-// 		disputPopap.classList.remove('hidden')
-// 	})
-// }
-// var disputButtonSave = document.querySelector('.accrued-disputs__save');
-// var disputButtonCansel = document.querySelector('.accrued-disputs__cancel')
-// disputButtonSave.addEventListener('click', function(){
-// 	disputPopap.classList.add('hidden')
-// })
-// disputButtonCansel.addEventListener('click', function(){
-// 	disputPopap.classList.add('hidden')
-// })
+	disputButton[i].addEventListener('click', function(){
+		disputPopap.classList.remove('hidden')
+	})
+}
+var disputButtonSave = document.querySelector('.accrued-disputs__save');
+var disputButtonCansel = document.querySelector('.accrued-disputs__cancel')
+disputButtonSave.addEventListener('click', function(){
+	disputPopap.classList.add('hidden')
+})
+disputButtonCansel.addEventListener('click', function(){
+	disputPopap.classList.add('hidden')
+})
 
-// var	disputButtonCountPlus = document.querySelector('.accrued-disputs__plus-count');
-// var	disputButtonCountMinus = document.querySelector('.accrued-disputs__minus-count');
-// var disputCount = document.querySelector('.accrued-disputs__count');
-// disputButtonCountPlus.addEventListener('click', function(){
-// 	disputCount.textContent = Number(disputCount.textContent) + 1;
-// })
-// disputButtonCountMinus.addEventListener('click', function(){
-// 	if(Number(disputCount.textContent) > 1 ){
-// 	disputCount.textContent = Number(disputCount.textContent) - 1;
-// 	}
-// })
-// }
+var	disputButtonCountPlus = document.querySelector('.accrued-disputs__plus-count');
+var	disputButtonCountMinus = document.querySelector('.accrued-disputs__minus-count');
+var disputCount = document.querySelector('.accrued-disputs__count');
+disputButtonCountPlus.addEventListener('click', function(){
+	disputCount.textContent = Number(disputCount.textContent) + 1;
+})
+disputButtonCountMinus.addEventListener('click', function(){
+	if(Number(disputCount.textContent) > 1 ){
+	disputCount.textContent = Number(disputCount.textContent) - 1;
+	}
+})
+}
 
-// var depositButton = document.querySelectorAll('.deposit');
-// var depositPopup = document.querySelector('.accrued-deposit');
-// if(depositButton){
-// 	for (var i = 0; i < depositButton.length; i++ ){
-// depositButton[i].addEventListener('click', function(){
-// 	depositPopup.classList.remove('hidden');
-// })
-// }
+var depositButton = document.querySelectorAll('.deposit');
+var depositPopup = document.querySelector('.accrued-deposit');
+if(depositButton){
+	for (var i = 0; i < depositButton.length; i++ ){
+depositButton[i].addEventListener('click', function(){
+	depositPopup.classList.remove('hidden');
+})
+}
 
-// var depositButtonSave = document.querySelector('.accrued-deposit__save');
+var depositButtonSave = document.querySelector('.accrued-deposit__save');
 
-// depositButtonSave.addEventListener('click', function(){
-// 	depositPopup.classList.add('hidden');
-// })
+depositButtonSave.addEventListener('click', function(){
+	depositPopup.classList.add('hidden');
+})
 
-// var depositButtonCansel = document.querySelector('.accrued-deposit__cancel');
+var depositButtonCansel = document.querySelector('.accrued-deposit__cancel');
 
-// depositButtonCansel.addEventListener('click', function(){
-// 	depositPopup.classList.add('hidden');
-// })
-// 	}
+depositButtonCansel.addEventListener('click', function(){
+	depositPopup.classList.add('hidden');
+})
+	}
