@@ -67,9 +67,7 @@ font-weight: 700;
 cursor: pointer;
 	font-size: 16px;
 }
-.dossier-id:first-child{
-		padding-top: 80px;
-}
+
 .dossier-button{
 	color: #817970;
 	border: none;
@@ -770,4 +768,9 @@ height: 180px;
 
 	
 
+}
+.disput,
+.deposit,
+.paid-summ{
+	cursor: pointer;
 }
