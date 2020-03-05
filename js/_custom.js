@@ -646,7 +646,10 @@ function depositIntputClose (i){
 	return function(e){
 		if(e.keyCode === 13){
 depositIntput[i].classList.add('hidden');
+if (depositIntput[i].value !== ''){
 inputedDepozit[i].textContent = depositIntput[i].value
+depositIntput[i].value = '';
+}
 	}}
 }
 
