@@ -454,7 +454,7 @@ margin-left: 10px;
 		.accrued-deposit__content,
 		.accrued-paid__content{
 	top: 70px;
-	left: 450px;
+	left: 35%;
 	position: absolute;
 	width: 500px;
 	z-index: 0;
@@ -727,7 +727,7 @@ margin-top: 20px;
 .delete-clad .delete-clad-content{
 	position: absolute;
 	top: 70px;
-	left: 450px;
+	left: 35%;
 	background-color: #ffce4b;
 width: 500px;
 height: 180px;
@@ -751,4 +751,23 @@ height: 180px;
 	color: #ffffff;
 	border-radius: 8px;
 	outline: none;
+}
+#fileDownload{
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.fileDownload
+{
+	position: relative;
+	cursor: pointer;
+
+	height: 30px;
+	width: 170px;
+
+	
+
 }
